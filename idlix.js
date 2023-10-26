@@ -1,5 +1,5 @@
 async function idlix(query) {
-  const { data } = await axios.get(
+  const { data } = await require("axios").get(
     "https://tv2.idlixplus.net/wp-json/dooplay/search/?keyword=" +
       query +
       "&nonce=f83beb327e"
