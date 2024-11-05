@@ -1,4 +1,5 @@
 async function idlix(query) {
+  try {
   const { data } = await require("axios").get(
     "https://tv2.idlixplus.net/wp-json/dooplay/search/?keyword=" +
       query +
@@ -15,5 +16,8 @@ async function idlix(query) {
     };
   });
   return result;
+} catch (e) {
+return e.message
+  }
 }
 // idlix("Marvel");
