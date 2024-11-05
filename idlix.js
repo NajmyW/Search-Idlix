@@ -16,4 +16,4 @@ async function idlix(query) {
   });
   return result;
 }
-idlix("Marvel");
+// idlix("Marvel");
